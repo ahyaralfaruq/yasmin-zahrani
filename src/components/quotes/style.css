@@ -1,0 +1,17 @@
+.it-quotes {
+    background: var(--bg-dark);
+    padding: 1em;
+    text-align: center;
+    box-sizing: border-box;
+}
+.it-quotes-p-typography {
+    font-family: var(--ff-philosopher);
+    color: var(--cl-p-dark);
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .it-quotes-p-typography {
+        font-size: 13px;
+    }
+}

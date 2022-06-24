@@ -1,13 +1,42 @@
+@font-face {
+  font-family: greatvibes;
+  src: url('../public/assets/fonts/GreatVibes-Regular.ttf');
+}
+@font-face {
+  font-family: philosopher;
+  src: url('../public/assets/fonts/Philosopher-Regular.ttf');
+}
+
+:root {
+    --special-cl-gold : #C2AB68;
+    --special-cl-black : #0d1117;
+    --special-cl-gray : #21262d;
+    --special-cl-mute : #e5e7e9;
+    --bg-light :  #F6F3EE;
+    --bg-dark : #282c34;
+    --cl-p-light : #282c34;
+    --cl-p-dark : #f0f0f0;
+    --ff-philosopher : "philosopher";
+    --ff-greatvibes : "greatvibes";
+}
+
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: var(--bg-light); */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+section {
+    position: relative;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
 }

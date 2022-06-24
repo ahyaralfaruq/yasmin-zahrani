@@ -1,0 +1,65 @@
+.it-footer {
+    width: 100%;
+    height: fit-content !important;
+    background: var(--bg-dark);
+    padding: 2em 1em;
+    box-sizing: border-box;
+}
+.it-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.it-footer-images {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1em;
+}
+.it-footer-images-limit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    background: white;
+}
+.it-footer-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.it-footer-media-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1.2em;
+}
+.it-footer-icons {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 0 .5em;
+}
+.it-footer-typography {
+    font-family: var(--ff-philosopher);
+    font-weight: 550;
+    color: var(--cl-p-dark);
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .it-footer-images {
+        width: 120px;
+        height: 120px;
+    }
+    .it-footer-icons {
+        width: 25px;
+        height: 25px;
+    }
+    .it-footer-typography {
+        font-size: 13px;
+    }
+}

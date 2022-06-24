@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react'
+import {Carousel, OpeningBackground, Quotes, Gallery, Pesan, Footer} from './components'
 import './App.css';
 
+const LOCAL_STORAGE_KEY = 'pesan-dan-doa'
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [message, setMessage] = useState([])
+
+    function addPesan(pesan) {
+        setMessage([pesan,...message])
+    }
+
+    useEffect(() => {
+        const getPenyimpananLokal = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY))
+        if(getPenyimpananLokal) {
+            setMessage(getPenyimpananLokal)
+        }
+    }, [])
+
+    useEffect(() => {
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(message));
+    }, [message])
+
+    return (
+        <div className="App">
+            <OpeningBackground />
+            <Quotes />
+            <Gallery />
+            <Pesan message={message} addPesan={addPesan} />
+            <Carousel />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
