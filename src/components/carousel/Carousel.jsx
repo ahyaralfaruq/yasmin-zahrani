@@ -8,7 +8,7 @@ import "swiper/css/effect-fade";
 import "./style.css";
 
 // import required modules
-import { Autoplay, EffectFade } from "swiper";
+import { Autoplay} from "swiper";
 
 const Carousel = () => {
     return (

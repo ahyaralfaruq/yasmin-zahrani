@@ -12,21 +12,21 @@ const Footer = () => {
             </div>
 
             <div className="it-footer-media-wrapper">
-                <a href="https://api.whatsapp.com/send?phone=089652408205" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=089652408205" target="_blank"  rel='noreferrer'>
                     <div className="it-footer-icons">
                         <div className="it-footer-images-limit">
                             <img src="assets/icon/wa-icon.png" alt="whatsapp" className="it-footer-img" />
                         </div>
                     </div>
                 </a>
-                <a href="https://www.instagram.com/ayar.jr/" target="_blank">
+                <a href="https://www.instagram.com/ayar.jr/" target="_blank" rel='noreferrer'>
                     <div className="it-footer-icons">
                         <div className="it-footer-images-limit">
                             <img src="assets/icon/ig-icon.png" alt="instagram" className="it-footer-img" />
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/ahyaralfaruq" target="_blank">
+                <a href="https://github.com/ahyaralfaruq" target="_blank" rel='noreferrer'>
                     <div className="it-footer-icons">
                         <div className="it-footer-images-limit">
                             <img src="assets/icon/github-icon.png" alt="github" className="it-footer-img" />
