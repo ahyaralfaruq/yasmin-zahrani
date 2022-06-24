@@ -13,7 +13,7 @@ import { Autoplay, EffectFade } from "swiper";
 const Carousel = () => {
     return (
         <section className="it-carousel">
-            <h3 class="it-carousel-title-typography">Memories</h3>
+            <h3 className="it-carousel-title-typography">Memories</h3>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
@@ -24,7 +24,6 @@ const Carousel = () => {
                     disableOnInteraction: false
                 }}
                 modules={[Autoplay]}
-                // onSwiper={(swiper) => console.log(swiper)}
                 className="mySwiper"
             >
                 <SwiperSlide>
